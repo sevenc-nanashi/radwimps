@@ -67,6 +67,7 @@ class RADWIMPS
     else
       puts format_counter
     end
+    @life_counter = 0
   end
 
   alias 世 set
