@@ -11,8 +11,7 @@
 class RADWIMPS
   class Error < StandardError; end
 
-  VERSION = "2016.8.24.1.0.4"
-  RAISE = method(:raise)  # Somehow steep fails with Kernel.raise
+  VERSION = "2016.8.24.1.0.5"
 
   #
   # RADWIMPSを新しく結成します。
@@ -56,11 +55,11 @@ class RADWIMPS
   def set
     if @strict
       if @life_counter < -3
-        RAISE.(Error, "前世に行きすぎました。現在は#{format_counter}にいます。")
+        fail Error, "前世に行きすぎました。現在は#{format_counter}にいます。"
       elsif @life_counter == 0
-        RAISE.(Error, "君の前前前世を探していません。現在は#{format_counter}にいます。")
+        fail Error, "君の前前前世を探していません。現在は#{format_counter}にいます。"
       elsif @life_counter > -3
-        RAISE.(Error, "君の前前前世までたどり着いていません。現在は#{format_counter}にいます。")
+        fail Error, "君の前前前世までたどり着いていません。現在は#{format_counter}にいます。"
       else
         puts format_counter
       end
