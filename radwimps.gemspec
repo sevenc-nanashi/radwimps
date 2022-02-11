@@ -10,6 +10,8 @@ Gem::Specification.new do |spec|
 
   spec.summary = "君の前前前世から僕は 君を探しはじめたよ"
   spec.description = <<~LYRICS
+    == RADWIMPS
+
     やっと眼を覚ましたかい
     それなのになぜ眼も合わせやしないんだい？
     「遅いよ」と怒る君

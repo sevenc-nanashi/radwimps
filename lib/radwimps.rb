@@ -11,7 +11,7 @@
 class RADWIMPS
   class Error < StandardError; end
 
-  VERSION = "2016.8.24"
+  VERSION = "2016.8.24-1.0.1"
   RAISE = method(:raise)  # Somehow steep fails with Kernel.raise
 
   #
