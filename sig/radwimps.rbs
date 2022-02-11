@@ -1,4 +1,13 @@
-module Radwimps
+class RADWIMPS
   VERSION: String
-  # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+  RAISE: Method
+
+  def initialize: (?strict: bool) -> void
+  def then: () -> self
+  def raise: () -> self
+  def set: () -> void
+
+  private
+
+  def format_counter: () -> String
 end

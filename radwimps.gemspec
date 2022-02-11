@@ -1,24 +1,65 @@
 # frozen_string_literal: true
 
-require_relative "lib/radwimps/version"
+require_relative "lib/radwimps"
 
 Gem::Specification.new do |spec|
-  spec.name = "radwimps"
-  spec.version = Radwimps::VERSION
+  spec.name = "RADWIMPS"
+  spec.version = RADWIMPS::VERSION
   spec.authors = ["sevenc-nanashi"]
   spec.email = ["sevenc-nanashi@sevenbot.jp"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
-  spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.summary = "君の前前前世から僕は 君を探しはじめたよ"
+  spec.description = <<~LYRICS
+    やっと眼を覚ましたかい
+    それなのになぜ眼も合わせやしないんだい？
+    「遅いよ」と怒る君
+    これでもやれるだけ飛ばしてきたんだよ
+    心が身体を追い越してきたんだよ
+    君の髪や瞳だけで胸が痛いよ
+    同じ時を吸いこんで離したくないよ
+    遥か昔から知る その声に
+    生まれてはじめて 何を言えばいい?
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+    君の前前前世から僕は 君を探しはじめたよ
+    そのぶきっちょな笑い方をめがけて やってきたんだよ
+    君が全然全部なくなって チリヂリになったって
+    もう迷わない また１から探しはじめるさ
+    むしろ０から また宇宙をはじめてみようか
+
+
+    どっから話すかな
+    君が眠っていた間のストーリー
+    何億 何光年分の物語を語りにきたんだよ
+    けどいざその姿この眼に映すと
+    君も知らぬ君とジャレて 戯れたいよ
+    君の消えぬ痛みまで愛してみたいよ
+    銀河何個分かの 果てに出逢えた
+    その手を壊さずに どう握ったならいい?
+
+    君の前前前世から僕は 君を探しはじめたよ
+    その騒がしい声と涙をめがけ やってきたんだよ
+    そんな革命前夜の僕らを誰が止めるというんだろう
+    もう迷わない 君のハートに旗を立てるよ
+    君は僕から諦め方を 奪い取ったの
+
+    (おぉ おぉ おぉ おぉ）
+    (おぉ おぉ おぉ おぉ）
+    (おぉ おぉ おぉ おぉ）
+    (おぉ おぉ おぉ おぉ）
+    (おぉ おぉ おぉ おぉ）
+
+    前前前世から僕は 君を探しはじめたよ
+    そのぶきっちょな笑い方をめがけて やってきたんだよ
+    君が全然全部なくなって チリヂリになったって
+    もう迷わない また１から探しはじめるさ
+    何光年でも この歌を口ずさみながら
+  LYRICS
+  spec.homepage = "https://github.com/sevenc-nanashi/radwimps"
+  spec.license = "MIT"
+  spec.required_ruby_version = ">= 2.5.1"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/sevenc-nanashi/radwimps"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

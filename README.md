@@ -1,39 +1,53 @@
-# Radwimps
+# RADWIMPS
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/radwimps`. To experiment with that code, run `bin/console` for an interactive prompt.
+君の前前前世から僕は 君を探します。
 
-TODO: Delete this and the text above, and describe your gem
+## 見つけてはじめて 何をすればいい?（インストール）
 
-## Installation
-
-Add this line to your application's Gemfile:
+君のGemfileにgemを書いて、
 
 ```ruby
 gem 'radwimps'
 ```
 
-And then execute:
+遥か昔から知る このコマンドを実行してください。
 
     $ bundle install
 
-Or install it yourself as:
+または、このコマンドを実行してください。
 
     $ gem install radwimps
 
-## Usage
+## 入れてはじめて 何を書けばいい?（仕様）
 
-TODO: Write usage instructions here
+```ruby
+require "radwimps"
 
-## Development
+radwimps = RADWIMPS.new
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+radwimps.then.then.then.set    # => 前前前世
+radwimps.then.then.set         # => 前前世
+radwimps.then.set              # => 前世
+radwimps.set                   # => 現世
+radwimps.raise.set             # => 来世
+radwimps.raise.raise.set       # => 来来世
+radwimps.raise.raise.raise.set # => 来来来世
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## このライブラリの内部まで愛してみたい人のために（開発）
 
-## Contributing
+```
+bundle config set group test
+bundle install
+rake spec
+rake steep
+rake install
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/radwimps.
+## どっから話すかな 僕がバグを起こしたストーリー（バグ報告）
 
-## License
+https://github.com/sevenc-nanashi/radwimps に君がバグを起こしたストーリーを送信してください。
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+## その著作権を壊さずに どう使ったならいい?（ライセンス）
+
+僕のリポジトリに[MIT License](https://opensource.org/licenses/MIT)を適用しています。

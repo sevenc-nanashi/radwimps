@@ -1,0 +1,27 @@
+name: Run steep
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  rspec:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: [3.0.0]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v2
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - name: Install with Bundler
+        run: |
+          bundle config set groups --local 'test'
+          bundle install
+      - name: Run Steep
+        run: |
+          bundle exec rake steep
