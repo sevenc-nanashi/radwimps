@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["sevenc-nanashi@sevenbot.jp"]
 
   spec.summary = "君の前前前世から僕は 君を探しはじめたよ"
-  spec.description = <<~LYRICS.gsub(/$/, "")
+  spec.description = <<~LYRICS.gsub(/\n/, "\n\n")
     == RADWIMPS
 
     やっと眼を覚ましたかい
