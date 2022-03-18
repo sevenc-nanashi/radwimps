@@ -2,6 +2,9 @@ class RADWIMPS
   VERSION: String
   RAISE: Method
 
+  @strict: bool
+  @life_counter: Integer
+
   def initialize: (?strict: bool) -> void
   def then: () -> self
   def raise: () -> self
@@ -10,4 +13,7 @@ class RADWIMPS
   private
 
   def format_counter: () -> String
+end
+
+class RADWIMPS::Error < StandardError
 end

@@ -55,11 +55,11 @@ class RADWIMPS
   def set
     if @strict
       if @life_counter < -3
-        fail Error, "前世に行きすぎました。現在は#{format_counter}にいます。"
+        fail RADWIMPS::Error, "前世に行きすぎました。現在は#{format_counter}にいます。"
       elsif @life_counter == 0
-        fail Error, "君の前前前世を探していません。現在は#{format_counter}にいます。"
+        fail RADWIMPS::Error, "君の前前前世を探していません。現在は#{format_counter}にいます。"
       elsif @life_counter > -3
-        fail Error, "君の前前前世までたどり着いていません。現在は#{format_counter}にいます。"
+        fail RADWIMPS::Error, "君の前前前世までたどり着いていません。現在は#{format_counter}にいます。"
       else
         puts format_counter
       end
